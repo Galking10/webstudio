@@ -1,0 +1,31 @@
+.clients {
+    padding: 94px 0;
+    &_list {
+        &_container{
+            width: 170px;
+            height: 92px;
+            border-radius: 4px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid $grey;
+            box-sizing: border-box;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+                border-color: $blue;
+            }
+            &:hover .clients_icon {
+                fill: $blue;
+            }
+
+        }
+    }
+
+    &_icon {
+        width: 106px;
+        height: 60px;
+        fill: $grey;
+        margin: 16px 32px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+}

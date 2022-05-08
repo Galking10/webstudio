@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link href="./css/main.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+  <!--Шапка страницы-->
+  <div class="container">
+    <header class="header">
+      <div class="header_logo">
+        <a class="" href="./index.html"><span class="header_logo_web">Web</span>Studio</a>
+      </div>
+      <nav>
+        <div>
+          <ul class="header_list">
+            <li><a class="header_list_links" href="./index.html">Студия</a></li>
+            <li><a class="header_list_links" href="./index2.html">Портфолио</a></li>
+            <li><a class="header_list_links" href="">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <address class="header_address">
+        <a href="mailto:info@devstudio.com" target="blank"> <svg class="header_address_mail">
+            <use href="./assats/symbol-defs.svg#icon-email"></use>
+          </svg></a>
+        <a href="tel:+380961111111" target="blank"> <svg class="header_address_tel">
+            <use href="./assats/symbol-defs.svg#icon-tel"></use>
+          </svg></a>
+      </address>
+    </header>
+  </div>
+
+  <main>
+    <section class="promo">
+      <div class="container">
+        <h1 class="promo_heading">
+          ЭФФЕКТИВНОЕ РЕШЕНИЕ<br />ДЛЯ ВАШЕГО БИЗНЕСА
+        </h1>
+        <button class="button" data-modal-open>Заказать услугу</button>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <ul class="about_list">
+          <li class="about_item">
+            <div class="about_item_container icon-center"><svg class="about_icon">
+                <use href="./assats/symbol-defs.svg#icon-radar"></use>
+              </svg></div>
+
+            <h3>Внимание к деталям</h3>
+            <p>
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="about_item">
+            <div class="about_item_container icon-center"><svg class="about_icon">
+                <use href="./assats/symbol-defs.svg#icon-clock"></use>
+              </svg></div>
+            <h3>Пунктуальность</h3>
+            <p>
+              Задача организации, в особенности же рамки и место обучения
+              кадров влечет за собой.
+            </p>
+          </li>
+          <li class="about_item">
+            <div class="about_item_container icon-center"><svg class="about_icon">
+                <use href="./assats/symbol-defs.svg#icon-diagram"></use>
+              </svg></div>
+            <h3>Планирование</h3>
+            <p>
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="about_item">
+            <div class="about_item_container icon-center"><svg class="about_icon">
+                <use href="./assats/symbol-defs.svg#icon-astronaut"></use>
+              </svg></div>
+            <h3>Современные технологии</h3>
+            <p>
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="make">
+      <div class="container">
+        <h2 class="make_header">Чем мы занимаемся</h2>
+        <ul class="make_list">
+          <li lass="make_item">
+            <div class="make_item_container"> <img src="./assats/doing/img.png" alt="смотрит в смартфон и ноутбук" />
+              <p class="make_text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
+          </li>
+          <li class="make_list">
+            <div class="make_item_container"><img src="./assats/doing/img(1).png" alt="смотрит в смартфон и ноутбук" />
+              <p class="make_text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
+          </li>
+          <li class="make_list">
+            <div class="make_item_container"><img src="./assats/doing/img(2).png" alt="держит в руке планшет" />
+              <p class="make_text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h2 class="team_header">Наша команда</h2>
+        <ul>
+          <li class="team_list">
+            <img class="team_list_img" src="./assats/team/img(1).jpg" alt="Фото" />
+            <h4 class="team_list_header">Игорь Демьяненко</h4>
+            <p class="team_list_p">Product Designer</p>
+            <ul class="team_links">
+              <li>
+                <div class="team_links_icon icon-center"><a href="https://www.instagram.com/" target="blank"> <svg
+                      class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-insta"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-tw"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-f"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-in"></use>
+                    </svg></a></div>
+              </li>
+            </ul>
+
+          </li>
+          <li class="team_list">
+            <img class="team_list_img" src="./assats/team/img(2).jpg" alt="Фото" />
+            <h4 class="team_list_header">Ольга Репина</h4>
+            <p class="team_list_p">Frontend Developer</p>
+            <ul class="team_links">
+              <li>
+                <div class="team_links_icon icon-center"><a href="https://www.instagram.com/" target="blank"> <svg
+                      class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-insta"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-tw"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-f"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-in"></use>
+                    </svg></a></div>
+              </li>
+            </ul>
+
+          </li>
+          <li class="team_list">
+            <img class="team_list_img" src="./assats/team/img(3).jpg" alt="Фото" />
+            <h4 class="team_list_header">Николай Тарасов</h4>
+            <p class="team_list_p">Marketing</p>
+            <ul class="team_links">
+              <li>
+                <div class="team_links_icon icon-center"><a href="https://www.instagram.com/" target="blank"> <svg
+                      class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-insta"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-tw"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-f"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-in"></use>
+                    </svg></a></div>
+              </li>
+            </ul>
+          </li>
+          <li class="team_list">
+            <img class="team_list_img" src="./assats/team/img(4).jpg" alt="Фото" />
+            <h4 class="team_list_header">Михаил Ермаков</h4>
+            <p class="team_list_p">UI Designer</p>
+            <ul class="team_links">
+              <li>
+                <div class="team_links_icon icon-center"><a href="https://www.instagram.com/" target="blank"> <svg
+                      class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-insta"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-tw"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-f"></use>
+                    </svg></a></div>
+              </li>
+              <li>
+                <div class="team_links_icon icon-center"><a> <svg class="team_links_svg">
+                      <use href="./assats/symbol-defs.svg#icon-in"></use>
+                    </svg></a></div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <h2>Постоянные клиенты</h2>
+        <ul class="clients_list">
+          <li>
+            <div class="clients_list_container"><a href=""><svg class="clients_icon">
+                  <use href="./assats/symbol-defs.svg#icon-yago"></use>
+                </svg></a></div>
+          </li>
+          <li>
+            <div class="clients_list_container"><a href=""><svg class="clients_icon">
+                  <use href="./assats/symbol-defs.svg#icon-logosecond"></use>
+                </svg></a></div>
+          </li>
+          <li>
+            <div class="clients_list_container"><a href=""><svg class="clients_icon">
+                  <use href="./assats/symbol-defs.svg#icon-logo"></use>
+                </svg></a></div>
+          </li>
+          <li>
+            <div class="clients_list_container"><a href=""><svg class="clients_icon">
+                  <use href="./assats/symbol-defs.svg#icon-logofoster"></use>
+                </svg></a></div>
+          </li>
+          <li>
+            <div class="clients_list_container"><a href=""><svg class="clients_icon">
+                  <use href="./assats/symbol-defs.svg#icon-brand"></use>
+                </svg></a></div>
+          </li>
+          <li>
+            <div class="clients_list_container"><a href=""><svg class="clients_icon">
+                  <use href="./assats/symbol-defs.svg#icon-logocompany"></use>
+                </svg></a></div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_address">
+          <a class="footer_address_logo" href=""><span class="footer_address_web">Web</span>Studio</a>
+          <address>
+            <p class="footer_p">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="footer_mail" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer_tel" href="tel:+380991111111">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <div class="footer_social">
+          <h5>ПРИСОЕДИНЯЙТЕСЬ</h5>
+          <ul>
+            <li>
+              <div class="footer_link footer_links_border"><a href="https://www.instagram.com/"
+                  target="blank">
+                  <svg class="footer_link_icon">
+                    <use href="/assats/symbol-defs.svg#icon-insta"></use>
+                  </svg></a></div>
+            </li>
+            <li>
+              <div class="footer_link footer_links_border"><a> <svg class="footer_link_icon">
+                    <use href="./assats/symbol-defs.svg#icon-tw"></use>
+                  </svg></a></div>
+            </li>
+            <li>
+              <div class="footer_link footer_links_border"><a> <svg class="footer_link_icon">
+                    <use href="./assats/symbol-defs.svg#icon-f"></use>
+                  </svg></a></div>
+            </li>
+            <li>
+              <div class="footer_link footer_links_border"><a> <svg class="footer_link_icon">
+                    <use href="./assats/symbol-defs.svg#icon-in"></use>
+                  </svg></a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_subscribe">
+          <h5>ПОДПИШИСЬ НА РАССЫЛКУ</h5>
+          <form class="footer_send">
+            <input class="footer_input" type="email" id="email" placeholder="E-mail">
+            <button class="button">Подписаться<svg class="footer_icon">
+                <use href="./assats/symbol-defs.svg#icon-icon_send"></use>
+              </svg></button>
+          </form>
+
+        </div>
+      </div>
+
+    </footer>
+  </main>
+  <div class="backdrope is-hidden" data-modal>
+    <div class="modal is-hidden_modal" data-window>
+      <h3>Оставьте свои данные, мы вам перезвоним</h3>
+      <div class="form-field">
+        <label for="name" class="form-label">Имя</label>
+        <input type="text" name="user-name" class="form-input" id="name" />
+        <svg class="field-svg field-svg_name">
+          <use href="./images/symbol-defs2.svg#icon-name"></use>
+        </svg>
+      </div>
+      <div class="form-field">
+        <label for="tel" class="form-label">Телефон</label>
+        <input type="text" name="tel" id="tel" class="form-input" />
+        <svg class="field-svg field-svg_tel">
+          <use href="./images/symbol-defs2.svg#icon-telephone"></use>
+        </svg>
+      </div>
+      <div class="form-field">
+        <label for="mail" class="form-label">Почта</label>
+        <input type="email" name="mail" id="mail" class="form-input" />
+        <svg class="field-svg field-svg_male">
+          <use href="./images/symbol-defs2.svg#icon-male"></use>
+        </svg>
+      </div>
+
+      <div class="form-field">
+        <label for="comment">Комментарий</label>
+        <textarea name="comment" id="comment" class="comment" placeholder="Введите текст"></textarea>
+      </div>
+
+      <div class="form-policy">
+        <input type="checkbox" name="policy" id="policy">
+        <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+
+      </div>
+      <button type="submit" class="btn-send">Отправить</button>
+
+      <button class="modal-button" data-modal-close><svg class="button-close">
+          <use href="./images/symbol-defs2.svg#icon-close"></use>
+        </svg></button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

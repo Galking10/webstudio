@@ -1,0 +1,23 @@
+.promo {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    margin-top: 0;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url("../assats/promo/promo.jpg");
+    width: 1600px;
+
+    &_heading {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 60px;
+        color: $white;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .button {
+        margin: 0 auto;
+    }
+}

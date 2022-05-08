@@ -1,0 +1,87 @@
+.header {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid $lightgrey;
+
+    &_logo {
+        font-family: "Raleway", sans-serif;
+        color: $black;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+    
+        &_web {
+            font-family: "Raleway", sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            text-decoration: none;
+            color: #2196f3;
+          
+        }
+      
+    }
+    &_list {
+        width: 294px;
+
+        &_links {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: #212121;
+            position: relative;
+    
+            &:hover {
+                color: $blue;
+              }
+              &:hover::after {
+                width: 100%;
+              }
+            &::after {
+                content: '';
+                background-color: #2196f3;
+                display: block;
+                position: absolute;
+                top: 44px;
+                width: 0%;
+                height: 4px;
+                border-radius: 2px;
+                transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+          
+           
+        }
+       
+    }
+    
+    &_address {
+    
+        &_mail {
+     width: 161px;
+      height: 16px;
+      fill: $grey-links;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+          fill: $blue;
+      }
+        }
+        &_tel {
+            width: 142px;
+            height: 16px;
+            fill: $grey-links;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover {
+                fill: $blue;
+            }
+          }
+    }
+}

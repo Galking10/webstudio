@@ -1,0 +1,82 @@
+@import './pallete';
+@import './header';
+@import './about';
+@import './make';
+@import './team';
+@import './clients';
+@import './footer';
+@import './promo';
+@import './modal';
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: $black;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black;
+  margin: 0 0 50px 0;
+}
+
+.icon-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  background: $blue;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
