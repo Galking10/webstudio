@@ -16,8 +16,8 @@
 
 <body>
   <!--Шапка страницы-->
-  <div class="container">
-    <header class="header">
+  <header class="header">
+    <div class="container center">
       <div class="header_logo">
         <a class="" href="./index.html"><span class="header_logo_web">Web</span>Studio</a>
       </div>
@@ -39,8 +39,19 @@
             <use href="./assats/symbol-defs.svg#icon-tel"></use>
           </svg></a>
       </address>
-    </header>
-  </div>
+
+      <button type="button" class="menu-btn is-open" data-menu-btn>
+        <svg width="30px" height="30px"
+          aria-controls="menu-container"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false">
+          <use class="icon-cross" href="./assats/symbol-defs.svg#icon-close"></use>
+          <use class="icon-menu" href="./assats/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu-container is-open" id="menu-container" data-menu>Контент меню</div>
+    </div>
+  </header>
 
   <main>
     <section class="promo">
@@ -300,8 +311,7 @@
           <h5>ПРИСОЕДИНЯЙТЕСЬ</h5>
           <ul>
             <li>
-              <div class="footer_link footer_links_border"><a href="https://www.instagram.com/"
-                  target="blank">
+              <div class="footer_link footer_links_border"><a href="https://www.instagram.com/" target="blank">
                   <svg class="footer_link_icon">
                     <use href="/assats/symbol-defs.svg#icon-insta"></use>
                   </svg></a></div>
@@ -338,48 +348,46 @@
     </footer>
   </main>
   <div class="backdrope is-hidden" data-modal>
-    <div class="modal is-hidden_modal" data-window>
-      <h3>Оставьте свои данные, мы вам перезвоним</h3>
-      <div class="form-field">
+    <div class="modal" data-window>
+      <h3 class="modal_header">Оставьте свои данные, мы вам перезвоним</h3>
+      <div class="modal_field">
         <label for="name" class="form-label">Имя</label>
         <input type="text" name="user-name" class="form-input" id="name" />
-        <svg class="field-svg field-svg_name">
-          <use href="./images/symbol-defs2.svg#icon-name"></use>
+        <svg class="modal_svg modal_svg_name">
+          <use href="./assats/symbol-defs.svg#icon-name"></use>
         </svg>
       </div>
-      <div class="form-field">
+      <div class="modal_field">
         <label for="tel" class="form-label">Телефон</label>
         <input type="text" name="tel" id="tel" class="form-input" />
-        <svg class="field-svg field-svg_tel">
-          <use href="./images/symbol-defs2.svg#icon-telephone"></use>
+        <svg class="modal_svg modal_svg_tel">
+          <use href="./assats/symbol-defs.svg#icon-telephone"></use>
         </svg>
       </div>
-      <div class="form-field">
+      <div class="modal_field">
         <label for="mail" class="form-label">Почта</label>
         <input type="email" name="mail" id="mail" class="form-input" />
-        <svg class="field-svg field-svg_male">
-          <use href="./images/symbol-defs2.svg#icon-male"></use>
+        <svg class="modal_svg modal_svg_male">
+          <use href="./assats/symbol-defs.svg#icon-male"></use>
         </svg>
       </div>
-
-      <div class="form-field">
+      <div class="modal_field">
         <label for="comment">Комментарий</label>
         <textarea name="comment" id="comment" class="comment" placeholder="Введите текст"></textarea>
       </div>
-
-      <div class="form-policy">
+      <div class="form">
         <input type="checkbox" name="policy" id="policy">
-        <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-
+        <label for="policy" class="form_policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+            договора</a></label>
       </div>
-      <button type="submit" class="btn-send">Отправить</button>
-
-      <button class="modal-button" data-modal-close><svg class="button-close">
-          <use href="./images/symbol-defs2.svg#icon-close"></use>
+      <button type="submit" class="btn_send" data-modal-close>Отправить</button>
+      <button class="modal_button" data-modal-close><svg class="modal_button_close">
+          <use href="./assats/symbol-defs.svg#icon-close"></use>
         </svg></button>
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

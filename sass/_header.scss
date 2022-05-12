@@ -1,10 +1,12 @@
 .header {
+    position: relative;
     padding: 24px 0;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0;
     align-items: center;
     border-bottom: 1px solid $lightgrey;
+    width: 100%;
 
     &_logo {
         font-family: "Raleway", sans-serif;
@@ -14,7 +16,7 @@
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;
-    
+
         &_web {
             font-family: "Raleway", sans-serif;
             font-size: 26px;
@@ -24,10 +26,11 @@
             text-align: left;
             text-decoration: none;
             color: #2196f3;
-          
+
         }
-      
+
     }
+
     &_list {
         width: 294px;
 
@@ -39,13 +42,15 @@
             letter-spacing: 0.02em;
             color: #212121;
             position: relative;
-    
+
             &:hover {
                 color: $blue;
-              }
-              &:hover::after {
+            }
+
+            &:hover::after {
                 width: 100%;
-              }
+            }
+
             &::after {
                 content: '';
                 background-color: #2196f3;
@@ -57,31 +62,115 @@
                 border-radius: 2px;
                 transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
-          
-           
+
+
         }
-       
+
     }
-    
+
     &_address {
-    
-        &_mail {
-     width: 161px;
-      height: 16px;
-      fill: $grey-links;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover {
-          fill: $blue;
-      }
+        width: 333px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        a {
+            width: 138px;
         }
+
+        @media screen and (max-width: 1200px) {
+            width: 138px;
+            justify-content: start;
+            
+
+        }
+
+        &_mail {
+            width: 161px;
+            height: 16px;
+            fill: $grey-links;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                fill: $blue;
+            }
+
+            @media screen and (max-width: 1200px) {
+                width: 138px;
+                height: 14px;
+            }
+
+        }
+
         &_tel {
             width: 142px;
             height: 16px;
             fill: $grey-links;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
             &:hover {
                 fill: $blue;
             }
-          }
+            @media screen and (max-width: 1200px) {
+                width: 138px;
+                height: 14px;
+                margin-left: -4px;
+            }
+        }
+
     }
+
+  
+
+
+}
+
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: bee;
+}
+
+
+.menu-btn {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    display: none;
+    
+    @media screen and (max-width:768px) {
+        display: block;
+    }
+}
+
+.menu-btn .icon-cross {
+    display: none;
+}
+.menu-btn.is-open .icon-cross {
+    display: block;
+}
+.menu-btn.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    
+    
+    &.is-open {
+        display: block;
+    }
+
 }

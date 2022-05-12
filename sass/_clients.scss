@@ -1,6 +1,9 @@
 .clients {
     padding: 94px 0;
     &_list {
+        flex-wrap: wrap;
+        row-gap: 30px;
+
         &_container{
             width: 170px;
             height: 92px;
@@ -17,6 +20,13 @@
                 fill: $blue;
             }
 
+            @media  screen and (max-width: 1200px) { 
+                width: 226px;
+                
+            }
+            @media screen and (max-width: 768px) {
+                width: 210px;
+            } 
         }
     }
 
