@@ -9,6 +9,7 @@
 @import './modal';
 @import './buttons';
 @import './services';
+@import './page_header';
 
 .container {
   margin: 0 auto;
@@ -37,6 +38,7 @@ ul {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  align-items: center;
 
 }
 

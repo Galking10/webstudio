@@ -19,7 +19,7 @@
   <header class="header">
     <div class="container center">
       <div class="header_logo">
-        <a class="" href="./index.html"><span class="header_logo_web">Web</span>Studio</a>
+        <a  class="is-open" href="./index.html" data-logo><span class="header_logo_web">Web</span>Studio</a>
       </div>
       <nav>
         <div>
@@ -40,16 +40,42 @@
           </svg></a>
       </address>
 
-      <button type="button" class="menu-btn is-open" data-menu-btn>
-        <svg width="30px" height="30px"
-          aria-controls="menu-container"
-          aria-label="Переключатель мобильного меню"
+      <button type="button" class="menu-btn" data-menu-btn>
+        <svg class="icon-cross"  aria-controls="menu-container" aria-label="Переключатель мобильного меню"
           aria-expanded="false">
-          <use class="icon-cross" href="./assats/symbol-defs.svg#icon-close"></use>
-          <use class="icon-menu" href="./assats/symbol-defs.svg#icon-menu"></use>
+          <use href="./assats/symbol-defs.svg#icon-close"></use>
         </svg>
+        <svg class="icon-menu"  aria-controls="menu-container" aria-label="Переключатель мобильного меню"
+        aria-expanded="false">
+        <use href="./assats/symbol-defs.svg#icon-menu"></use>
+      </svg>
       </button>
-      <div class="menu-container is-open" id="menu-container" data-menu>Контент меню</div>
+      <div class="menu-container" id="menu-container" data-menu>
+        <div class="navigation">
+          <ul>
+            <li><a href="./index.html">Студия</a></li>
+            <li><a class="potfolio" href="./index2.html">Портфолио</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <a href="tel:+380961111111" target="blank"> <svg class="contacts_tel">
+              <use href="./assats/symbol-defs.svg#icon-tel"></use>
+            </svg></a>
+            <a href="mailto:info@devstudio.com" target="blank"> <svg class="contacts_mail">
+              <use href="./assats/symbol-defs.svg#icon-email"></use>
+            </svg></a>
+        </div>
+        <div class="social-links">
+          <ul>
+            <li class="row"><a >Instagram</a></li>
+            <li class="row"><a>Twitter</a></li>
+            <li class="row"><a>Facebook</a></li>
+            <li><a>LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </div>
   </header>
 
@@ -380,7 +406,7 @@
         <label for="policy" class="form_policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия
             договора</a></label>
       </div>
-      <button type="submit" class="btn_send" data-modal-close>Отправить</button>
+      <button type="submit" class="btn_send">Отправить</button>
       <button class="modal_button" data-modal-close><svg class="modal_button_close">
           <use href="./assats/symbol-defs.svg#icon-close"></use>
         </svg></button>
