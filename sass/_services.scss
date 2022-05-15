@@ -23,6 +23,7 @@
             }
             
         }
+
         @media screen and (max-width:768px) {
             width: 450px;
             img {
@@ -42,8 +43,6 @@
             }
         }
     }
-
-
 }
 
 .complex {
@@ -70,10 +69,8 @@
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 0.03em;
-        color: $white;
-         
+        color: $white;    
     }
-
 }
 
 .services_title {
@@ -93,7 +90,6 @@
         padding-bottom: 20px;
         margin: 0;
         text-align: left;
-      
     }
 
     &_head {
@@ -107,5 +103,4 @@
         margin: 0; 
         text-align: left;
     }
-
 }

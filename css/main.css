@@ -15,7 +15,8 @@
   width: 100%;
 }
 
-.header nav, .header address {
+.header nav,
+.header address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

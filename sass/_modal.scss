@@ -53,7 +53,6 @@
                 fill: $blue;
 
             }
-
         }
 
         label {
@@ -92,7 +91,6 @@
     }
 
     &_svg {
-
         &_name {
             position: absolute;
             left: 15px;
@@ -141,6 +139,7 @@
         padding-bottom: 2px;
         background-color: $white;
         cursor: pointer;
+
         &:hover {
             fill: $blue;
         }
@@ -176,7 +175,6 @@
         input {
             margin: 0;
         }
-        
     }
 
     &_policy {
