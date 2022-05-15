@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  position: fixed;
   padding: 24px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +13,14 @@
           align-items: center;
   border-bottom: 1px solid #f5f4fa;
   width: 100%;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 16px 0;
+  }
 }
 
 .header nav,
@@ -415,7 +423,7 @@
 
 @media screen and (max-width: 768px) {
   .clients_list_container {
-    width: 210px;
+    width: 170px;
   }
 }
 
@@ -545,6 +553,7 @@
 
 @media screen and (max-width: 768px) {
   .footer_subscribe {
+    width: 350px;
     margin-left: 0;
   }
 }
@@ -598,7 +607,7 @@
 
 @media screen and (max-width: 1200px) {
   .footer_input {
-    width: 450px;
+    width: 350px;
     margin-bottom: 20px;
   }
 }
@@ -794,6 +803,13 @@
 @media screen and (max-width: 1200px) {
   .modal {
     width: 370px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 370px;
+    padding: 25px;
   }
 }
 
@@ -1362,7 +1378,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 450px;
+    width: 350px;
   }
 }
 
@@ -1370,6 +1386,12 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    top: 60px;
+  }
 }
 
 ul {

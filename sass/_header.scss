@@ -1,5 +1,5 @@
 .header {
-    position: relative;
+    position: fixed;
     padding: 24px 0;
     display: flex;
     justify-content: space-between;
@@ -7,6 +7,12 @@
     align-items: center;
     border-bottom: 1px solid $lightgrey;
     width: 100%;
+    top: 0;
+    background-color: $white;
+
+    @media screen and (max-width:768px) {
+        padding: 16px 0;
+    }
 
     nav,
     address {
