@@ -14,37 +14,66 @@
 </head>
 
 <body>
-    <!--Шапка страницы-->
-
     <header class="header">
         <div class="container center">
-
-            <div class="header_logo">
-                <a class="" href="./index.html"><span class="header_logo_web">Web</span>Studio</a>
+          <div class="header_logo">
+            <a  class="is-open" href="./index.html" data-logo><span class="header_logo_web">Web</span>Studio</a>
+          </div>
+          <nav>
+            <div>
+              <ul class="header_list">
+                <li><a class="header_list_links" href="./index.html">Студия</a></li>
+                <li><a class="header_list_links" href="./index2.html">Портфолио</a></li>
+                <li><a class="header_list_links" href="#footer">Контакты</a></li>
+              </ul>
             </div>
-            <nav>
-                <div>
-                    <ul class="header_list">
-                        <li><a class="header_list_links" href="./index.html">Студия</a></li>
-                        <li><a class="header_list_links" href="./index2.html">Портфолио</a></li>
-                        <li><a class="header_list_links" href="">Контакты</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <address class="header_address">
-                <a href="mailto:info@devstudio.com" target="blank"> <svg class="header_address_mail">
-                        <use href="./assats/symbol-defs.svg#icon-email"></use>
-                    </svg></a>
-                <a href="tel:+380961111111" target="blank"> <svg class="header_address_tel">
-                        <use href="./assats/symbol-defs.svg#icon-tel"></use>
-                    </svg></a>
-            </address>
+          </nav>
+          <address class="header_address">
+            <a href="mailto:info@devstudio.com" target="blank"> <svg class="header_address_mail">
+                <use href="./assats/symbol-defs.svg#icon-email"></use>
+              </svg></a>
+            <a href="tel:+380961111111" target="blank"> <svg class="header_address_tel">
+                <use href="./assats/symbol-defs.svg#icon-tel"></use>
+              </svg></a>
+          </address>
+          <button type="button" class="menu-btn" data-menu-btn>
+            <svg class="icon-cross"  aria-controls="menu-container" aria-label="Переключатель мобильного меню"
+              aria-expanded="false">
+              <use href="./assats/symbol-defs.svg#icon-close"></use>
+            </svg>
+            <svg class="icon-menu"  aria-controls="menu-container" aria-label="Переключатель мобильного меню"
+            aria-expanded="false">
+            <use href="./assats/symbol-defs.svg#icon-menu"></use>
+          </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+              <ul>
+                <li><a href="./index.html">Студия</a></li>
+                <li><a class="potfolio" href="./index2.html">Портфолио</a></li>
+                <li><a href="#footer">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="contacts">
+              <a href="tel:+380961111111" target="blank"> <svg class="contacts_tel">
+                  <use href="./assats/symbol-defs.svg#icon-tel"></use>
+                </svg></a>
+                <a href="mailto:info@devstudio.com" target="blank"> <svg class="contacts_mail">
+                  <use href="./assats/symbol-defs.svg#icon-email"></use>
+                </svg></a>
+            </div>
+            <div class="social-links">
+              <ul>
+                <li class="row"><a >Instagram</a></li>
+                <li class="row"><a>Twitter</a></li>
+                <li class="row"><a>Facebook</a></li>
+                <li><a>LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </header>
-
-
-
+        </div>
+      </header>
     <main>
         <section class="buttons">
             <div class="container">
@@ -58,8 +87,6 @@
                 </ul>
             </div>
         </section>
-
-
         <div class="container">
             <section class="services">
                 <ul class="services_list">
@@ -169,7 +196,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer_address">
                 <a class="footer_address_logo" href=""><span class="footer_address_web">Web</span>Studio</a>
@@ -217,6 +244,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

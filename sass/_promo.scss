@@ -1,44 +1,42 @@
 .promo {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  margin-top: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../assats/promo/promo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 768px) {
+    background-size: auto 100%;
+  }
+
+  &_heading {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: $white;
+    margin-bottom: 30px;
     margin-top: 0;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../assats/promo/promo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    @media screen and (max-width:768px) {
-        background-size: auto 100%;
-
+    @media screen and (max-width: 1200px) {
+      font-size: 26px;
+      line-height: 42px;
     }
+  }
 
-    &_heading {
-        font-weight: 700;
-        font-size: 44px;
-        line-height: 60px;
-        color: $white;
-        margin-bottom: 30px;
-        margin-top: 0;
+  .button {
+    margin: 0 auto;
+  }
 
-        @media screen and (max-width:1200px) {
-            font-size: 26px;
-            line-height: 42px;
-        }
-    }
-
-    .button {
-        margin: 0 auto;
-
-
-    }
-
-    @media screen and (max-width:1200px) {
-        padding-top: 118px;
-        padding-bottom: 118px;
-
-    }
+  @media screen and (max-width: 1200px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }

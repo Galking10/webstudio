@@ -1,41 +1,39 @@
 .clients {
-    padding: 94px 0;
-    &_list {
-        flex-wrap: wrap;
-        row-gap: 30px;
+  padding: 94px 0;
+  &_list {
+    flex-wrap: wrap;
+    row-gap: 30px;
 
-        &_container{
-            width: 170px;
-            height: 92px;
-            border-radius: 4px;
-            background-position: center;
-            background-repeat: no-repeat;
-            border: 1px solid $grey;
-            box-sizing: border-box;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover {
-                border-color: $blue;
-            }
-            &:hover .clients_icon {
-                fill: $blue;
-            }
+    &_container {
+      width: 170px;
+      height: 92px;
+      border-radius: 4px;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 1px solid $grey;
+      box-sizing: border-box;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        border-color: $blue;
+      }
+      &:hover .clients_icon {
+        fill: $blue;
+      }
 
-            @media  screen and (max-width: 1200px) { 
-                width: 226px;
-                
-            }
-            @media screen and (max-width: 768px) {
-                width: 170px;
-            } 
-        }
+      @media screen and (max-width: 1200px) {
+        width: 226px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 170px;
+      }
     }
+  }
 
-    &_icon {
-        width: 106px;
-        height: 60px;
-        fill: $grey;
-        margin: 16px 32px;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    }
+  &_icon {
+    width: 106px;
+    height: 60px;
+    fill: $grey;
+    margin: 16px 32px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
